@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="styles.css">
   <title>Ricardo Baroni - Minhas Obras Preferidas</title>
 </head>
-<body>
+<body id="body">
   <div class="container">
     <div id="media-list">
       <h1>{{ title }}</h1>
       <p>{{autor}}</p>
-      <select v-on:change="filtrarLista">
+      <select class="deixarResponsivo" v-on:change="filtrarLista">
         <option value="">Selecione o tipo de mídia...</option>
         <option v-for="item in itensUnicos">{{item}}</option>
       </select>

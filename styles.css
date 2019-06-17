@@ -108,4 +108,9 @@ select {
     width: 300px;
     outline: none;
 }
-  
+    @media only screen and (max-width: 800px) {
+        select {
+          position: unset;
+        }
+    }
+
